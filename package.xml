@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>netgains_deleteccsave</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Magento Creditcard Purger Extension: Custom credit card purger extension to secure CC information.</summary>
+    <description>Custom credit card purger extension to secure CC information and automatically remove (except than last 4 digits) the CC numbers from database once the order is marked Completed &#xD;
+&#xD;
+Features: &#xD;
+1: Remove sensitive CC information from the database and only retain last 4 digits. &#xD;
+2: Works as soon as the order is marked Completed. &#xD;
+3: Proper check in place in case if the order status is pending, the extension won't remove the CC &#xD;
+&#xD;
+For any query or issue please email to support@netgains.org</description>
+    <notes>Version number: 0.1.0 Stability: Stable Compatibility: 1.7, 1.8, 1.8.1, 1.9</notes>
+    <authors><author><name>Ashish Khuller</name><user>Netgainsorg</user><email>biz@netgains.org</email></author></authors>
+    <date>2014-07-24</date>
+    <time>14:22:33</time>
+    <contents><target name="magelocal"><dir name="Netgains"><dir name="Deleteccsave"><dir name="Block"><dir name="Adminhtml"><file name="Deleteccsavebackend.php" hash="efa65afba4fb8cd59b720d619c6bd0ea"/><dir name="Sales"><dir name="Order"><file name="Grid.php" hash="34671feaa3bd447bbce9c014ff80a2ed"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="4d540e12763355b98610317f27cef8e8"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="DeleteccsavebackendController.php" hash="045af0ba0c9b5c473b6b38272b24ed16"/><file name="DeleteccsavebackendController.php~" hash="889b21a8a9bcef19a910d07440c2c7ab"/></dir></dir><dir name="etc"><file name="config.xml" hash="efbb190fd2b5d32c09793dcbd524eaed"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Netgains_Deleteccsave.xml" hash="8140f8afdcb8d51cee4f16a8b70fb784"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="deleteccsave.xml" hash="8ea9590a758faa850d2f780f17492cf2"/></dir><dir name="template"><dir name="deleteccsave"><file name="deleteccsavebackend.phtml" hash="93ad3e798b60ad33539a944088478690"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
