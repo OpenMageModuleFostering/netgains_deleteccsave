@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Magento Creditcard Purger Extension: Custom credit card purger extension to secure CC information.
